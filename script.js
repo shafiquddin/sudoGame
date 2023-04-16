@@ -61,7 +61,7 @@ rollDiceBtn.addEventListener('click', () => {
   if (playing) {
     dice.classList.remove('hidden');
     const randomDice = Math.trunc(Math.random() * 6) + 1;
-    dice.src = `dice-${randomDice}.png`;
+    dice.src = `img/dice-${randomDice}.png`;
     if (randomDice !== 1) {
       currentScore = currentScore + randomDice;
       document.getElementById(`current--${activePlayer}`).textContent =
